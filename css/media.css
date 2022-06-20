@@ -1,0 +1,115 @@
+@media (max-width: 1120px){
+    .nav-list{
+        display: none;
+    }
+    .nav-button{
+        display: block;
+        padding: 9px;
+        margin: 5px;
+    }
+    .header{
+        padding-top: 30px;
+    }
+    .header-content{
+        margin-top: 60px;
+    }
+    .nav.open .nav-list{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left:0;
+        right: 0;
+        background-color: #a1887f;
+
+        z-index: 5;
+        padding: 46px 30px;
+        display: flex;
+        flex-direction: column;
+        grid-row-gap:40px;
+
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .nav.open .link-contacts{
+        display: none;
+    }
+    .nav-button{
+        position: fixed;
+        z-index: 9;
+        top: 36px;
+        right: 46px;
+    }
+    .header-nav{
+        margin-bottom: 40px;
+    }
+    .header-content{
+        margin-top: 0;
+    }
+}
+@media (max-width: 409px){
+    .header-row{
+        flex-direction: column;
+    }
+    .header-h2 {
+        font-size: 20px;
+    }
+    .header-h1 {
+        font-size: 34px;
+    }
+    .facts{
+        padding: 60px 0;
+    }
+
+    .fact-card-num {
+        font-size: 2rem;
+    }
+    .goals{
+        padding: 60px 0;
+    }
+    .goals-row{
+        flex-direction: column;
+    }
+    .goal-card{
+
+        min-width: 33%;
+        /*        max-width: 90%;*/
+
+    }
+    .goal-card-img{
+
+        /*        min-width: 33%;*/
+        width: 40%;
+    }
+    .clients{
+        padding: 60px 0;
+    }
+    .contacts{
+        padding: 60px 0;
+    }
+    .contacts-title{
+        margin-bottom: 20px;
+
+    }
+    .contacts-content{
+        margin-bottom: 20px;
+        font-size: 1rem;
+
+    }
+    .contacts-button{
+        margin-bottom: 20px;
+    }
+    .btn{font-size: 1rem;}
+    .contacts-footer{
+        line-height: 1;
+        font-size: .8rem;
+    }
+    .advantages-h2{
+        font-size: 2rem;
+    }
+    .feauters-card-li{
+        font-size: .8rem;
+    }
+    .feauters-card-li2{
+        font-size: .6rem;
+    }
+}

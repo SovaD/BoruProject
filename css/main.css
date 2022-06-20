@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* RESET */
+
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    /*outline: none;*/
+}
+
+a:focus,
+a:active {
+    /* outline: none;*/
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    /* color: inherit; */
+    text-decoration: none;
+    display: inline-block; 
+}
+
+a:hover  {
+    /* color: inherit; */
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul, ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img, svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form */
+
+input, textarea, button, select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+/* STYLE */
+body{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    max-width: 1170px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.header{
+    padding-top: 20px;
+    background-color: white;
+/*    background-color: #a1887f;*/
+}
+
+.header-nav {
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 70px;
+}
+/*
+}
+.header-nav--fixed {
+    position: fixed;
+    z-index: 9;
+    max-width: 1170px;
+    padding: 0 46px;
+    margin: 0 auto;
+
+
+    left: 0px;
+    right: 0px;
+    top: 46px;
+
+    background:#a1887f;
+    opacity: 0.9;
+}
+*/
+.logo {
+    position: relative;
+    padding: 3px;
+    width: 50%;
+}
+
+/* NAV */
+.nav {
+}
+.nav-list {
+    display: flex;
+    column-gap: 50px;
+
+    font-weight: 500;
+    font-size: 14px;
+}
+.nav-button {
+    display: none;
+    padding: 9px;
+    margin: 5px;
+}
+.nav-item {
+}
+.nav-link {
+    color: black;
+}
+.nav-link.active{
+/*    color: white;*/
+    color: darkgray;
+}
+
+/* HEADER CONTENT */
+
+.header-row {
+    display: flex;
+    column-gap: 30px;
+/*    color: white;*/
+    text-align: center;
+}
+.header-content,
+.header-content-partners{
+    margin:auto 0px;
+    max-width: 500px;
+    text-align: center;
+}
+.header-h2 {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 24px;
+}
+.header-h1 {
+    margin-bottom: 20px;
+    font-weight: 900;
+    font-size: 44px;
+}
+.header-content p{    
+    line-height: 2;
+    font-size: 1.2rem;
+}
+.header-img{
+    max-width: 80%;
+}
+/* FACTS */
+.facts {
+    padding: 90px 0;
+    background-color: #a1887f;
+    color: white;
+}
+h2,
+.facts-h2,
+.goals-h2,
+.clients-h2,
+.advantages-h2 
+{    
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.facts-row{
+    display: flex;
+    column-gap: 30px;
+    margin-bottom: 30px;
+}
+.fact-card{
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+}
+.fact-card-img {
+/*    margin-bottom: 30px;*/
+    width: 30%;
+    display: block;
+    margin: 20px auto;
+}
+.fact-card-p
+{
+    line-height: 1;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.fact-card-num {
+    margin-bottom: 10ox;
+    font-weight: 600;
+    font-size: 2.3rem;
+}
+/* GOALS */
+.goals {
+/*    background-color: #a1887f;*/
+    background-color: #fff;
+    padding: 90px 0;
+/*    color: white;*/
+}
+.goals-row{
+    display: flex;
+    /*    column-gap: 100px;*/
+    margin-bottom: 30px;
+    grid-row-gap: 60px;
+    flex-wrap:wrap-reverse;
+}
+
+.goal-card{
+    flex: 1 1 0;
+    margin: 0px 10px;
+    /*    border:solid 1px lightsalmon;*/
+
+    min-width: 22%;
+
+
+}
+.goal-card-img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+.goal-card-p
+{
+    height: 40%;
+    margin: 20px 0px;
+    line-height: 1;
+    text-align: center;
+    font-size: 1.2rem;
+}
+/* CLIENTS */
+
+.clients {
+        background-color: #a1887f;
+    padding: 90px 0;
+        color: white;
+}
+.marquee-infinite{
+    /*    margin: 30px auto;*/
+    max-width: 100%;
+    overflow: hidden;
+}
+.marquee-infinite div{
+    display: flex;
+    width: 200%;
+    animation: marquee-infinite 7s linear infinite;
+
+}
+.marquee-infinite span{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.marquee-infinite img{
+    width: 10%;
+    margin: 0 20px;
+}
+.marquee-infinite:hover div{
+    animation-play-state: paused;
+}
+@keyframes marquee-infinite{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+/* FOOTER */
+.contacts {
+/*    background-color: #a1887f;*/
+    background-color: white;
+    padding: 60px 0;
+/*    color: white;*/
+    text-align: center;
+}
+.contacts-title {
+    margin-bottom: 40px;
+}
+.contacts-h2{
+}
+.contacts-content {
+    max-width: 500px;
+    margin: 0 auto 40px;
+    font-size: 1.5rem;
+}
+
+.contacts-content p+p{
+    margin-top: 1em;
+}
+.contacts-button {
+    margin-bottom: 60px;
+
+}
+.btn {
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 22px;
+
+/*    color: white;*/
+    font-size: 1.5rem;
+    border: solid 2px;    
+    transition: background 0.3s ease-in, top 0.3s ease-in;
+}
+.btn:hover,
+.btn:focus{
+    border-color: yellow;
+}
+.btn:active{
+    position: relative;
+    top:1px;
+    border-color: orange;
+}
+.contacts-footer{
+/*    color: white;*/
+    line-height: 2;
+}

@@ -1,0 +1,136 @@
+
+/* PARTNERS */
+/* FEAUTERS */
+
+.feauters,
+.advantages{
+    padding: 50px 0;
+     background-color: #a1887f;
+       color: white;
+}
+.feauters-row {
+    display: flex;
+    /*    column-gap: 30px;*/
+    /*    text-align: center;*/
+}
+.feauters-content {   
+    margin: 20px auto;
+    padding: 0px 10%;
+    /*    max-width: 500px;*/
+    text-align: left;
+    /*    line-height: 1;*/
+    font-size: 1rem;
+}
+.feauters-img{
+    max-width: 30%;
+    margin: auto 0px;
+}
+
+.feauters-card-li{
+    margin: 0;
+    padding: 8px 0 8px 5px;
+    list-style:disc;
+    list-style-position: outside;
+    font-size: 1.4rem;
+}
+.feauters-card-li2{
+    margin-left: 40px;
+    padding: 0px 0px 0px 5px;
+    list-style:circle;
+    list-style-position: outside;
+
+}
+
+/* SERVICES */
+.services { 
+   padding: 90px 0;
+     
+}
+.services-row {
+    display: flex;
+/*    column-gap: 60px;*/
+    margin-bottom: 30px;
+    grid-row-gap: 60px;
+    flex-wrap:wrap;
+}
+.service-card {
+    flex: 1 1 0;
+    margin: 0px 10px;
+    /*    border:solid 1px lightsalmon;*/
+    min-width: 30%;
+}
+.service-card-img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+.service-card-h3{
+    margin: 30px 0px 10px 0px;
+    font-weight: 600;
+    font-size: 2rem;
+    text-align: center;
+    height: 13%;
+}
+.service-card-content {
+    font-size: 1rem;
+}
+.services hr {
+    border: 0;
+    height: 0; 
+    box-shadow: 0 0 10px 1px black;
+    margin-bottom: 20px;
+}
+.service-card-p {
+    height: 40%;
+    margin: 20px 0px 20px 0px;
+    line-height: 1;
+    text-align: center; 
+    font-size: 1.2rem;
+    font-style: italic;
+}
+.service-card-list{
+    font-size: 1rem;
+    padding-left: 20px;
+}
+.service-card-li{
+    margin: 0;
+    padding: 8px  8px 25px;
+    list-style: disc;
+
+    list-style-position: outside;
+/*
+    background-image: url("../img/icons/circle_mark.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 5%;
+*/
+    
+
+}
+/* ADVANTAGES */
+.advantages{
+     padding: 90px 0;
+}
+.advantages-row {
+    display: flex;
+    column-gap: 30px;
+        margin-bottom: 30px;
+}
+.advantages-card {
+    overflow: hidden;
+    position: relative;
+    align-content: center;
+    margin: 0 2%;
+    padding: 20px 0px;
+}
+.advantages-card-h3 {
+    margin: 10px auto;
+    font-weight: 600;
+    font-size: 1.2rem;
+    text-align: center;
+/*    height: 30%;*/
+}
+.advantages-card-p {
+    text-align: center;
+}

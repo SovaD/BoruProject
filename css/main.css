@@ -104,7 +104,7 @@ legend {
 body{
     color: black;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .container{
@@ -184,7 +184,7 @@ body{
 }
 .header-content p{    
     line-height: 2;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 .header-img{
     max-width: 80%;

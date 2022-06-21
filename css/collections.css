@@ -246,7 +246,7 @@
     padding: 0em 2em 2em 2em;
     color: #fff;
     text-transform: uppercase;
-    font-size: 1.25em;
+/*     font-size: 1.25em; */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }

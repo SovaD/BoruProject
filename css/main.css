@@ -100,10 +100,11 @@ label {
 legend {
     display: block;
 }
-/* STYLE */
+/* ********* STYLE ********** */
 body{
     color: black;
     font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
 }
 
 .container{
@@ -116,7 +117,7 @@ body{
 .header{
     padding-top: 20px;
     background-color: white;
-/*    background-color: #a1887f;*/
+    /*    background-color: #a1887f;*/
 }
 
 .header-nav {
@@ -126,24 +127,6 @@ body{
     align-items: flex-end;
     margin-bottom: 70px;
 }
-/*
-}
-.header-nav--fixed {
-    position: fixed;
-    z-index: 9;
-    max-width: 1170px;
-    padding: 0 46px;
-    margin: 0 auto;
-
-
-    left: 0px;
-    right: 0px;
-    top: 46px;
-
-    background:#a1887f;
-    opacity: 0.9;
-}
-*/
 .logo {
     position: relative;
     padding: 3px;
@@ -158,7 +141,7 @@ body{
     column-gap: 50px;
 
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
 }
 .nav-button {
     display: none;
@@ -171,33 +154,33 @@ body{
     color: black;
 }
 .nav-link.active{
-/*    color: white;*/
+    /*    color: white;*/
     color: darkgray;
 }
 
 /* HEADER CONTENT */
 
 .header-row {
-    display: flex;
+    display:flex;
     column-gap: 30px;
-/*    color: white;*/
-    text-align: center;
+    /*    color: white;*/
+    /*    text-align: center;*/
 }
 .header-content,
 .header-content-partners{
-    margin:auto 0px;
+    margin:auto;
     max-width: 500px;
     text-align: center;
 }
 .header-h2 {
     margin-bottom: 15px;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 2rem;
 }
 .header-h1 {
     margin-bottom: 20px;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 3.6rem;
 }
 .header-content p{    
     line-height: 2;
@@ -205,6 +188,7 @@ body{
 }
 .header-img{
     max-width: 80%;
+    margin: auto;
 }
 /* FACTS */
 .facts {
@@ -225,17 +209,22 @@ h2,
     text-transform: uppercase;
 }
 .facts-row{
-    display: flex;
-    column-gap: 30px;
+    display: flex;    
     margin-bottom: 30px;
+    flex-wrap:wrap;
+    /*    column-gap: 30px;*/
+    /*    margin-bottom: 30px;*/
 }
 .fact-card{
     overflow: hidden;
     position: relative;
     align-content: center;
+    flex: 1 1 0;
+
+    min-width: 30%;
 }
 .fact-card-img {
-/*    margin-bottom: 30px;*/
+    /*    margin-bottom: 30px;*/
     width: 30%;
     display: block;
     margin: 20px auto;
@@ -243,32 +232,34 @@ h2,
 .fact-card-p
 {
     line-height: 1;
-    font-size: 1.2rem;
+    /*    font-size: 1.2rem;*/
     text-align: center;
 }
 .fact-card-num {
     margin-bottom: 10ox;
     font-weight: 600;
-    font-size: 2.3rem;
+    font-size: 2rem;
 }
 /* GOALS */
 .goals {
-/*    background-color: #a1887f;*/
+    /*    background-color: #a1887f;*/
     background-color: #fff;
     padding: 90px 0;
-/*    color: white;*/
+    /*    color: white;*/
 }
 .goals-row{
     display: flex;
+    
+    justify-content: center;
     /*    column-gap: 100px;*/
-    margin-bottom: 30px;
-    grid-row-gap: 60px;
+    margin: 20px auto;
+    /*    grid-column-gap: 60px;*/
     flex-wrap:wrap-reverse;
 }
 
 .goal-card{
     flex: 1 1 0;
-    margin: 0px 10px;
+    margin: 15px 10px;
     /*    border:solid 1px lightsalmon;*/
 
     min-width: 22%;
@@ -286,14 +277,13 @@ h2,
     margin: 20px 0px;
     line-height: 1;
     text-align: center;
-    font-size: 1.2rem;
 }
 /* CLIENTS */
 
 .clients {
-        background-color: #a1887f;
+    background-color: #a1887f;
     padding: 90px 0;
-        color: white;
+    color: white;
 }
 .marquee-infinite{
     /*    margin: 30px auto;*/
@@ -328,10 +318,10 @@ h2,
 }
 /* FOOTER */
 .contacts {
-/*    background-color: #a1887f;*/
+    /*    background-color: #a1887f;*/
     background-color: white;
     padding: 60px 0;
-/*    color: white;*/
+    /*    color: white;*/
     text-align: center;
 }
 .contacts-title {
@@ -349,7 +339,7 @@ h2,
     margin-top: 1em;
 }
 .contacts-button {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 
 }
 .btn {
@@ -357,7 +347,7 @@ h2,
     border-radius: 30px;
     padding: 10px 22px;
 
-/*    color: white;*/
+    /*    color: white;*/
     font-size: 1.5rem;
     border: solid 2px;    
     transition: background 0.3s ease-in, top 0.3s ease-in;
@@ -372,6 +362,6 @@ h2,
     border-color: orange;
 }
 .contacts-footer{
-/*    color: white;*/
+    /*    color: white;*/
     line-height: 2;
 }

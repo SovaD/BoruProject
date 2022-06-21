@@ -1,4 +1,7 @@
 @media (max-width: 1120px){
+    body{
+        font-size: 1.4rem;
+    }
     .nav-list{
         display: none;
     }
@@ -12,6 +15,10 @@
     }
     .header-content{
         margin-top: 60px;
+        max-width: 700px;
+    }
+    .header-content p{
+        font-size: 1.6rem;
     }
     .nav.open .nav-list{
         position: fixed;
@@ -45,71 +52,43 @@
     .header-content{
         margin-top: 0;
     }
-}
-@media (max-width: 409px){
+    /*    header row*/
     .header-row{
         flex-direction: column;
     }
-    .header-h2 {
-        font-size: 20px;
-    }
-    .header-h1 {
-        font-size: 34px;
-    }
-    .facts{
-        padding: 60px 0;
+
+    .header-img{
+        max-width: 50%;
     }
 
-    .fact-card-num {
-        font-size: 2rem;
+    .facts-row{
+
+        /*        flex-wrap:wrap;*/
+        column-gap: 60px;
     }
-    .goals{
-        padding: 60px 0;
+    .fact-card{
+
+        max-width: 45%;
     }
     .goals-row{
-        flex-direction: column;
+        column-gap: 60px;
     }
     .goal-card{
+        max-width: 40%;
+        min-width: 28%;
+    }
+    .services-row {
+        flex-direction: column;
+    }
+    .service-card {
+        margin: 30px;
+    }
+    .service-card-img {
+        max-width: 30%;
+        
+    }
+    .advantages-row {
+        flex-direction: column;
+    }
 
-        min-width: 33%;
-        /*        max-width: 90%;*/
-
-    }
-    .goal-card-img{
-
-        /*        min-width: 33%;*/
-        width: 40%;
-    }
-    .clients{
-        padding: 60px 0;
-    }
-    .contacts{
-        padding: 60px 0;
-    }
-    .contacts-title{
-        margin-bottom: 20px;
-
-    }
-    .contacts-content{
-        margin-bottom: 20px;
-        font-size: 1rem;
-
-    }
-    .contacts-button{
-        margin-bottom: 20px;
-    }
-    .btn{font-size: 1rem;}
-    .contacts-footer{
-        line-height: 1;
-        font-size: .8rem;
-    }
-    .advantages-h2{
-        font-size: 2rem;
-    }
-    .feauters-card-li{
-        font-size: .8rem;
-    }
-    .feauters-card-li2{
-        font-size: .6rem;
-    }
 }
